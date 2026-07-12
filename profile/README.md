@@ -13,15 +13,15 @@
 
 如果在使用过程中遇到无法解决的问题，请通过以下邮箱进行反馈
 
-| 问题类型 | 反馈邮箱 | 问题举例 |
+| 问题类型 | 问题举例 | 反馈邮箱 |
 | --- | --- | --- |
-| 汉化文本 | [`text@bluearchive.cafe`](mailto:text@bluearchive.cafe) | 汉化缺失、翻译异常 |
-| 中配语音 | [`voice@bluearchive.cafe`](mailto:voice@bluearchive.cafe) | 中配缺失、语音异常 |
-| 媒体图像 | [`media@bluearchive.cafe`](mailto:media@bluearchive.cafe) | 图片缺失、显示异常 |
-| 应用程序 | [`client@bluearchive.cafe`](mailto:client@bluearchive.cafe) | 程序闪退、功能异常 |
-| 网站前端 | [`frontend@bluearchive.cafe`](mailto:frontend@bluearchive.cafe) | 功能建议、页面异常 |
-| 服务后端 | [`backend@bluearchive.cafe`](mailto:backend@bluearchive.cafe) | 登录失败、网络异常 |
-| 通用反馈 | [`feedback@bluearchive.cafe`](mailto:feedback@bluearchive.cafe) | 合作联系、其他异常 |
+| 汉化文本 | 文本缺失、翻译异常 | [`点击反馈`](mailto:feedback@bluearchive.cafe?subject=文本反馈：&body=问题位置：%0A%0A问题说明：%0A) |
+| 中配语音 | 语音缺失、语音异常 | [`点击反馈`](mailto:feedback@bluearchive.cafe?subject=语音反馈：&body=问题位置：%0A%0A问题说明：%0A) |
+| 媒体图像 | 图像缺失、显示异常 | [`点击反馈`](mailto:feedback@bluearchive.cafe?subject=图像反馈：&body=问题位置：%0A%0A问题说明：%0A) |
+| 应用程序 | 应用闪退、功能异常 | [`点击反馈`](mailto:feedback@bluearchive.cafe?subject=应用反馈：&body=问题位置：%0A%0A问题说明：%0A) |
+| 网页前端 | 功能建议、网页异常 | [`点击反馈`](mailto:feedback@bluearchive.cafe?subject=前端反馈：&body=问题位置：%0A%0A问题说明：%0A) |
+| 网络后端 | 登录失败、网络异常 | [`点击反馈`](mailto:feedback@bluearchive.cafe?subject=后端反馈：&body=问题位置：%0A%0A问题说明：%0A) |
+| 通用反馈 | 合作联系、其他异常 | [`点击反馈`](mailto:feedback@bluearchive.cafe?subject=通用反馈：&body=问题位置：%0A%0A问题说明：%0A) |
 
 ## 免责声明
 
