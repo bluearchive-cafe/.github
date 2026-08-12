@@ -150,11 +150,11 @@ jobs:
       - name: 打包产物
         run: |
           mkdir -p release/TableBundles/Catalog
-          zip_crc=$(cksum output/${{ steps.calc_version.outputs.version }}/TableBundles/Excel.zip | awk '{print $1}')
-          db_crc=$(cksum output/${{ steps.calc_version.outputs.version }}/TableBundles/ExcelDB.db | awk '{print $1}')
-          cp output/${{ steps.calc_version.outputs.version }}/TableBundles/Excel.zip release/TableBundles/16300795542385574620_${zip_crc}
-          cp output/${{ steps.calc_version.outputs.version }}/TableBundles/ExcelDB.db release/TableBundles/6993339912994747134_${db_crc}
-          cp output/${{ steps.calc_version.outputs.version }}/TableBundles/TableCatalog.bytes release/TableBundles/Catalog/TableCatalog.bytes
+          zip_crc=$(cksum output/${{ steps.calc_version.outputs.version }}/text=cn/voice=jp/media=na/TableBundles/Excel.zip | awk '{print $1}')
+          db_crc=$(cksum output/${{ steps.calc_version.outputs.version }}/text=cn/voice=jp/media=na/TableBundles/ExcelDB.db | awk '{print $1}')
+          cp output/${{ steps.calc_version.outputs.version }}/text=cn/voice=jp/media=na/TableBundles/Excel.zip release/TableBundles/16300795542385574620_${zip_crc}
+          cp output/${{ steps.calc_version.outputs.version }}/text=cn/voice=jp/media=na/TableBundles/ExcelDB.db release/TableBundles/6993339912994747134_${db_crc}
+          cp output/${{ steps.calc_version.outputs.version }}/text=cn/voice=jp/media=na/TableBundles/TableCatalog.bytes release/TableBundles/Catalog/TableCatalog.bytes
           cd release/TableBundles
           zip -r -9 ../TableBundles.zip .
 
