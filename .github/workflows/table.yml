@@ -140,12 +140,13 @@ jobs:
           name: ${{ needs.build.outputs.version }}
           path: output/${{ steps.calc_version.outputs.version }}/
 
-      - name: 部署资源
-        uses: wei/rclone@v1
-        env:
-          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+      - name: 配置 Rclone
+        uses: AnimMouse/setup-rclone@v1
         with:
-          args: sync output/${{ steps.calc_version.outputs.version }}/ bluearchive-cafe:/clientpatch/${{ steps.calc_version.outputs.version }}/
+          rclone_config: ${{ secrets.RCLONE_CONFIG }}
+
+      - name: 部署资源
+        run: rclone sync output/${{ steps.calc_version.outputs.version }}/ bluearchive-cafe:/clientpatch/${{ steps.calc_version.outputs.version }}/
 
       - name: 打包产物
         run: |
