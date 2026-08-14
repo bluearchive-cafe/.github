@@ -167,6 +167,18 @@ jobs:
           tag_name: ${{ steps.calc_version.outputs.version }}
           prerelease: true
           files: release/TableBundles.zip
+          body: |
+            ## 使用说明
+
+            下载 `TableBundles.zip` 并解压到对应平台的目录下即可：
+
+            - Android: `Android/data/com.YostarJP.BlueArchive/files/TableBundles/`
+            - Windows: `安装目录\BlueArchive_JP\BlueArchive_Data\StreamingAssets\TableBundles\`
+            - macOS: `​~/Library/Containers/ブルアカ/Data/Documents/TableBundles/`
+
+            ## 其他问题
+
+            替换文件方案不支持 `公告汉化`、`主线中配`、`图像视频`、`控制面板`、`登录加速` 等功能，不会自动更新文本，且游戏内字体显示异常，建议仅在应急情况下使用。
 
     outputs:
       version: ${{ steps.calc_version.outputs.version }}
